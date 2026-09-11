@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-box,
+.student-box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 25%;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.edit-btn {
+    background-color: green;
+}

@@ -1,0 +1,90 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Add Student -->
+        <div class="form-box">
+
+            <h2>Add Student</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                required
+            >
+
+            <input
+                type="text"
+                id="course"
+                placeholder="Enter Course"
+                required
+            >
+
+            <input
+                type="number"
+                id="marks"
+                placeholder="Enter Marks"
+                min="0"
+                max="100"
+                required
+            >
+
+            <button type="button" onclick="addStudent()">
+                Add Student
+            </button>
+
+        </div>
+
+        <!-- Student List -->
+        <div class="student-box">
+
+            <h2>Student List</h2>
+
+            <button type="button" onclick="getStudents()">
+                Load Students
+            </button>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- Students will appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
